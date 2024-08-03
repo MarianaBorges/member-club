@@ -1,0 +1,61 @@
+#history {
+  --check-div-size: 2rem;
+  --check-icon-size: 1.5rem;
+
+  height: auto;
+  padding: 1.25rem;
+
+  & h2 {
+    font: var(--subtitle-sm);
+    text-transform: uppercase;
+  }
+
+  & p {
+    font: var(--text-xs);
+  }
+
+  & strong {
+    font: var(--subtitle-sm);
+    color: var(--gray-600);
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray-200);
+    margin-top: 1rem;
+  }
+
+  .list-item-history {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.75rem;
+  }
+
+  .check-icon {
+    width: var(--check-div-size);
+    height: var(--check-div-size);
+    background-image: url('../assets/sealCheck.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: var(--check-icon-size);;
+    background-color:rgba(69, 180, 66, 0.12);
+    border-radius: 50%;
+  }
+}
+
+#total-user-haircut {
+  font: var(--text-xs);
+}
+
+@media (width >= 90rem) {
+  #history {
+    grid-area: 2 / 1 / 5 / 2; 
+
+    height: 23.375rem;
+    padding: 1.75rem 1.75rem 0 1.5rem;
+    overflow: auto;
+    scrollbar-width: thin;
+  }
+}

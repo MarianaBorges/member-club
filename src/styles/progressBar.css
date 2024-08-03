@@ -1,0 +1,71 @@
+#bonus-progress-bar {
+  --padding-loyalty-card: 1rem;
+  --border-radius-loyalty-card: 1rem;
+  --font-title-card: var(--text-sm);
+  --font-number-emphasis: var(--title-sm);
+  --font-count-haircuts-left: var(--text-xs);
+  --progress-bar-size: 11.4375rem;
+  --gift-div-size: 3.5rem;
+  --gift-icon-size: 2.5rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: auto;
+  padding: var(--padding-loyalty-card);
+
+
+  #count-haircuts-left {
+    font: var(--text-xs);
+  }
+
+  & strong {
+    font: var(--font-number-emphasis)
+  }
+
+  & p {
+    font: var(--font-title-card);
+  }
+
+  .progress-bar-background{
+    width: var(--progress-bar-size);
+    height: 0.5rem;
+
+    background-color: var(--gray-300);
+    border-radius: 0.25rem;
+  }
+
+  .progress-bar-gradient {
+    width: 0;
+    height: 100%;
+    border-radius: 0.25rem;
+    position: relative;
+    background-image: var(--gradient-base-um);
+  }
+
+  > :nth-child(2) {
+    width: var(--gift-div-size);
+    height: var(--gift-div-size);
+    background-image: url('../assets/pinGift.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: var(--gift-icon-size);;
+    background-color: var(--gray-200);
+    border-radius: 50%;
+  }
+}
+
+@media (width >= 90rem) {
+  #bonus-progress-bar {
+    --padding-loyalty-card: 2rem;
+    --font-title-card: var(--text-md);
+    --font-number-emphasis: var(--title-md);
+    --font-count-haircuts-left: var(--text-xs);
+    --progress-bar-size: 21.9375rem;
+    --gift-div-size: 4.5rem;
+    --gift-icon-size: 4rem;
+
+    grid-area: 4 / 2 / 5 / 3;
+  }
+}

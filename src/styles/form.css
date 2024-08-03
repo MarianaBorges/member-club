@@ -1,0 +1,62 @@
+form {
+  .input-wrapper {
+    background-color: var(--gray-300);
+    border: solid 1px var(--gray-400);
+    border-radius: 0.75rem;
+
+    width: 21.9375rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    padding: 7px 8px 7px 16px ;
+    gap: 4px;
+  }
+
+  .input-focus{
+    border: solid 1px var(--pink);
+  }
+
+  #input-seach-card-id {
+    background: none;
+    border: none;
+
+    width: 86%;
+    height: 2.5rem;
+
+    font: var(--text-md);
+  }
+
+  #input-seach-card-id:focus {
+    outline: 0;
+  }
+
+  #seach-button {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  #seach-button:hover {
+    background-image: url('../assets/inputIconHover.svg');
+  }
+
+  .seach-button-disabled {
+    background-image: url('../assets/inputIconDisabled.svg');
+  }
+
+  .seach-button-default {
+    background-image: url('../assets/inputIconDefault.svg');
+  }
+}
+
+@media (width >= 90rem) {
+  form {
+    .input-wrapper {
+      width: 25rem;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+#loyalty-card {
+  --padding-loyalty-card: 1.25rem;
+  --gap-loyalty-card: 0.4375rem;
+  --border-radius-loyalty-card: 1rem;
+  --card-size: 3.5rem;
+  --card-border-radius: 0.75rem;
+  --gift-size: 1.5rem;
+  --title: var(--subtitle-sm);
+
+  width: 100%;
+  padding: var(--padding-loyalty-card);
+  
+  #loyalty-card-list {
+    margin-top: var(--padding-loyalty-card);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: var(--gap-loyalty-card);
+    column-gap: var(--gap-loyalty-card);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    width: var(--card-size);
+    height: var(--card-size);
+  
+    background-color: var(--gray-200);
+    border-radius: var(--card-border-radius);
+  }
+
+  .checked{
+    background-image: url('../assets/pinCheck.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .gift {
+    background-image: url('../assets/gift.svg');
+    background-repeat: no-repeat;
+    background-size: var(--gift-size);
+    background-position: center;
+  }
+
+  #id-container {
+    width: 7.6875rem;
+    height: 1.5rem;
+    background-color: var(--gray-300);
+    border-radius: 1.5625rem;
+    text-align: left;
+    padding: 3px 0 0 8px;
+  }
+
+  #id-container p {
+    font: var(--title);
+  }
+
+  .title-loyalty-card{
+    width: 55%;
+  }
+}
+
+#loyalty-card h2 {
+  font: var(--subtitle-sm);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+#loyalty-card p {
+  font: var(--text-xs);
+}
+
+@media (width >= 90rem) {
+  #loyalty-card {
+    --padding-loyalty-card: 2rem;
+    --gap-loyalty-card: 0.9375rem;
+    --border-radius-loyalty-card: 1.25rem;
+    --card-size: 5.5rem;
+    --card-border-radius: 1.25rem;
+    --gift-size: 2.5rem;
+    --title: var(--subtitle-md);
+
+    grid-area: 1 / 2 / 4 / 3;
+
+    #id-container {
+      display: inline-block;
+      width: 9.3125rem;
+      height: 2rem;
+      background-color: var(--gray-300);
+      text-align: left;
+      padding: 6px 0 0 12px;
+    }
+  }
+
+}
+

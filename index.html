@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Club</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="./src/assets/logo.svg" alt="Logo do Member Club" id="logo-header">
+  </header>
+  <main>
+    <form action="">
+      <div class="input-wrapper">
+        <input 
+          type="text" 
+          name="input-seach-card-id" 
+          id="input-seach-card-id" 
+          placeholder="ID do cartão"
+          >
+        <button type="button" id="seach-button" class="seach-button-disabled"></button>
+      </div>
+    </form>
+    <div id="content">
+      <section id="user-details">
+        <div class="user-border-gradient">
+          <div class="img-background">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/008/442/086/small_2x/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" alt="Imagem do usuário">
+          </div>
+        </div>
+        <div id="tag-user-details">
+          <h2>Usuário</h2>
+          <p>Cliente desde</p>
+        </div>
+      </section>
+      <section id="loyalty-card">
+        <div class="flex space-between gap">
+          <div class="title-loyalty-card">
+            <h2>Cartão Fidelidade</h2>
+            <p>
+              Ao fazer cortes de cabelo, o décimo sai de graça!
+            </p>
+          </div>
+          <div id="id-container">
+            <p>ID: 000-000-000-000</p>
+          </div>
+        </div>
+        <div id="loyalty-card-list">
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card gift"></div>
+        </div>
+      </section>
+      <section id="bonus-progress-bar">
+        <div>
+          <p><strong id="quant-haircut-left">0</strong> cortes restantes</p>
+          <div class="flex center gap-xs">
+            <div class="progress-bar-background">
+              <div class="progress-bar-gradient"></div>
+            </div>
+            <p id="count-haircuts">0 de 10</p>
+          </div>
+        </div>
+        <div></div>
+      </section>
+      <section id="history">
+        <div class="flex space-between">
+          <h2>histórico</h2>
+          <p id="total-user-haircut">7 cortes</p>
+        </div>
+        <div class="line"></div>
+
+      </section>
+    </div>
+  </main>  
+</body>
+</html>
